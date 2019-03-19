@@ -12,16 +12,14 @@ public class GreatCircleDistance {
 	
 	//Input
 	Scanner input = new Scanner(System.in);
-	System.out.println("Enter the latitude of the first point");
+	System.out.println("Enter the latitude and longitude of the first point");
 	x1 = input.nextDouble();
-	System.out.println("Enter the longitude of the first point");
 	y1 = input.nextDouble();
 		
-	System.out.println("Enter the latitude of the second point");
+	System.out.println("Enter the latitude and longitude of the second point");
 	x2 = input.nextDouble();
-	System.out.println("Enter the longitude of the second point");
 	y2 = input.nextDouble();
-	
+		
 	// d is great circle distance 
 	double d;
 	d = r * Math.acos(Math.sin(Math.toRadians(x1)) * Math.sin(Math.toRadians(x2)) 
